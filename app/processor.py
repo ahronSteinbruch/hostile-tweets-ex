@@ -75,13 +75,14 @@ class DataProcessor:
         """find the first weapon in the text."""
         if not isinstance(text, str):
             return ""
-
         text_lower = text.lower()
+        weapons_found = []
+
         for weapon in self.weapons_list:
             # use regex to check if the weapon is in the text
             if re.search(r'\b' + re.escape(weapon) + r'\b', text_lower):
-                return weapon
-        return ""
+                weapons_found.append(weapon)
+        return ", ".join(weapons_found)
 
     def process_data(self, df):
         """
