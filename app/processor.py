@@ -104,15 +104,5 @@ class DataProcessor:
 
         return processed_df
 
-# data_fetcher = DataFetcher()
-# df = data_fetcher.get_all_records()
-# dataprocessor = DataProcessor()
-# d = dataprocessor.process_data(df)
-# for index, row in d.iterrows():
-#     print(row['original_text'])
-#     print(row['rarest_word'])
-#     print(row['sentiment'])
-#     print(row['weapons_detected'])
-#     print()
 
 

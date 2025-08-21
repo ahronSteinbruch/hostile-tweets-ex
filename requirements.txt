@@ -4,3 +4,5 @@ pymongo
 pandas
 nltk
 dnspython
+re
+emoji
